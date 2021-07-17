@@ -1,4 +1,4 @@
-package com.desafio.apirest.models;
+package com.desafio.apirest.models.local;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
