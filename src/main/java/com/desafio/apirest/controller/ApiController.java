@@ -1,8 +1,9 @@
 package com.desafio.apirest.controller;
 
-import com.desafio.apirest.models.Colecionadores;
-import com.desafio.apirest.models.ComicsData;
-import com.desafio.apirest.models.ComicsMarvel;
+import com.desafio.apirest.models.local.Colecionadores;
+import com.desafio.apirest.models.local.ComicsData;
+import com.desafio.apirest.models.local.ComicsMarvel;
+import com.desafio.apirest.models.remote.Comic;
 import com.desafio.apirest.repository.ApiComicsProxy;
 import com.desafio.apirest.repository.ColecionadoresRepository;
 import com.desafio.apirest.repository.ComicsRepository;
@@ -73,7 +74,7 @@ public class ApiController implements ComicsRepository{
 
     @Override
     @GetMapping("/v1/public/comics/")
-    public List<Object> getComics() {
+    public Comic getComics() {
          
         return proxy.getComics();
     }
