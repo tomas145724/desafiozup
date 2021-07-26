@@ -46,4 +46,8 @@ public class SwaggerConfig {
     }
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 022e282e6b3fbb6865520571e69bded0a8acae6c

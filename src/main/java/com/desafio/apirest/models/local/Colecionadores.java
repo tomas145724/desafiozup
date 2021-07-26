@@ -1,6 +1,10 @@
 package com.desafio.apirest.models.local;
 
+<<<<<<< HEAD
 import com.desafio.apirest.models.remote.Comic;
+=======
+
+>>>>>>> 022e282e6b3fbb6865520571e69bded0a8acae6c
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
@@ -37,7 +41,11 @@ public class Colecionadores {
     private LocalDate date;
 
    @Column
+<<<<<<< HEAD
     private String meuComic;
+=======
+    private ArrayList<Long> meuComic;
+>>>>>>> 022e282e6b3fbb6865520571e69bded0a8acae6c
 
     public long getId() {
         return id;
@@ -79,6 +87,7 @@ public class Colecionadores {
         this.date = date;
     }
 
+<<<<<<< HEAD
     public String getMeuComic() {
         return meuComic;
     }
@@ -92,6 +101,17 @@ public class Colecionadores {
     }
 
     public Colecionadores(long id, String name, String email, String cpf, LocalDate date, String meuComic) {
+=======
+    public ArrayList<Long> getMeuComic() {
+        return meuComic;
+    }
+
+    public void setMeuComic(ArrayList<Long> meuComic) {
+        this.meuComic = meuComic;
+    }
+
+    public Colecionadores(long id, String name, String email, String cpf, LocalDate date, ArrayList<Long> meuComic) {
+>>>>>>> 022e282e6b3fbb6865520571e69bded0a8acae6c
         this.id = id;
         this.name = name;
         this.email = email;
@@ -100,6 +120,12 @@ public class Colecionadores {
         this.meuComic = meuComic;
     }
 
+<<<<<<< HEAD
+=======
+    public Colecionadores() {
+    }
+
+>>>>>>> 022e282e6b3fbb6865520571e69bded0a8acae6c
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
