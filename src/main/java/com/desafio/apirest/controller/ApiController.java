@@ -79,7 +79,7 @@ public class ApiController implements ComicsRepository{
         return proxy.getComics();
     }
 
-    /*@DeleteMapping("/colecionadores")
+    @DeleteMapping("/colecionadores")
     @ApiOperation(value = "Deleta o cadastro de um colecionador")
     public void deletaColecionador(@RequestBody Colecionadores colecionador){
         colecionadoresRepository.delete(colecionador);
@@ -88,7 +88,7 @@ public class ApiController implements ComicsRepository{
     @ApiOperation(value = "Atualiza os dados de um colecionadore")
     public Colecionadores atualizarColecionador(@RequestBody Colecionadores colecionador){
         return colecionadoresRepository.save(colecionador);
-    }*/
+    }
 
 
 
