@@ -1,7 +1,6 @@
 package com.desafio.apirest.models.local;
 
 
-import com.desafio.apirest.models.remote.Comic;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -19,7 +18,8 @@ import java.util.*;
 
 @JsonDeserialize(as = ComicsMarvel.class)
 
-public class ComicsMarvel extends Comic {
+public class ComicsMarvel  {
+
 
     @Id
     private int id;

@@ -38,50 +38,52 @@ public class Colecionadores {
     private LocalDate date;
 
    @Column
-
     private String meuComic;
-
 
     public long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public Colecionadores setId(long id) {
         this.id = id;
+        return this;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public Colecionadores setName(String name) {
         this.name = name;
+        return this;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    public Colecionadores setEmail(String email) {
         this.email = email;
+        return this;
     }
 
     public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
+    public Colecionadores setCpf(String cpf) {
         this.cpf = cpf;
+        return this;
     }
 
     public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public Colecionadores setDate(LocalDate date) {
         this.date = date;
+        return this;
     }
-
 
     public String getMeuComic() {
         return meuComic;
@@ -90,9 +92,6 @@ public class Colecionadores {
     public Colecionadores setMeuComic(String meuComic) {
         this.meuComic = meuComic;
         return this;
-    }
-
-    public Colecionadores() {
     }
 
     public Colecionadores(long id, String name, String email, String cpf, LocalDate date, String meuComic) {
@@ -104,12 +103,15 @@ public class Colecionadores {
         this.meuComic = meuComic;
     }
 
+    public Colecionadores() {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Colecionadores)) return false;
         Colecionadores that = (Colecionadores) o;
-        return getId() == that.getId() && Objects.equals(getName(), that.getName()) && Objects.equals(getEmail(), that.getEmail()) && Objects.equals(getCpf(), that.getCpf()) && Objects.equals(getDate(), that.getDate()) && Objects.equals(getMeuComic(), that.getMeuComic());
+        return getId() == that.getId() && Objects.equals(getName(), that.getName()) && getEmail().equals(that.getEmail()) && getCpf().equals(that.getCpf()) && getDate().equals(that.getDate()) && Objects.equals(getMeuComic(), that.getMeuComic());
     }
 
     @Override
