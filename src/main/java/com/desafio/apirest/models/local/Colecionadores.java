@@ -111,7 +111,7 @@ public class Colecionadores {
         if (this == o) return true;
         if (!(o instanceof Colecionadores)) return false;
         Colecionadores that = (Colecionadores) o;
-        return getId() == that.getId() && Objects.equals(getName(), that.getName()) && getEmail().equals(that.getEmail()) && getCpf().equals(that.getCpf()) && getDate().equals(that.getDate()) && Objects.equals(getMeuComic(), that.getMeuComic());
+        return getId() == that.getId() && Objects.equals(getName(), that.getName()) && Objects.equals(getEmail(), that.getEmail()) && Objects.equals(getCpf(), that.getCpf()) && Objects.equals(getDate(), that.getDate()) && Objects.equals(getMeuComic(), that.getMeuComic());
     }
 
     @Override
