@@ -1,9 +1,8 @@
 package com.desafio.apirest.models.local;
 
-<<<<<<< HEAD
+
 import com.desafio.apirest.models.remote.Comic;
-=======
->>>>>>> 022e282e6b3fbb6865520571e69bded0a8acae6c
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Builder;
@@ -19,11 +18,9 @@ import java.util.*;
 @Data
 
 @JsonDeserialize(as = ComicsMarvel.class)
-<<<<<<< HEAD
+
 public class ComicsMarvel extends Comic {
-=======
-public class ComicsMarvel {
->>>>>>> 022e282e6b3fbb6865520571e69bded0a8acae6c
+
     @Id
     private int id;
     private String title;
